@@ -48,8 +48,8 @@ Text.args = {
   },
 };
 
-export const TextWithRightIcon = Template.bind({});
-TextWithRightIcon.args = {
+export const ButtonWithRightIcon = Template.bind({});
+ButtonWithRightIcon.args = {
   text: 'Right Icon Button',
   type: ButtonType.SOLID,
   iconRight: (
@@ -59,8 +59,8 @@ TextWithRightIcon.args = {
   ),
 };
 
-export const TextWithLeftIcon = Template.bind({});
-TextWithLeftIcon.args = {
+export const ButtonWithLeftIcon = Template.bind({});
+ButtonWithLeftIcon.args = {
   text: 'Left Icon Button',
   type: ButtonType.SOLID,
   iconLeft: (
