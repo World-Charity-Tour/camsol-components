@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import Button, { ButtonType } from '../components/atoms/button/Button';
+
 import MailIcon from '../components/icons/MailIcon';
 
 export default {
