@@ -6,6 +6,7 @@ CHANGELOG.md
 LICENSE.md
 SECURITY.md
 build
+dist
 react-app-env.d.ts
 setupTests.ts
 commitlint.config.js

@@ -22,7 +22,7 @@ Solid.args = {
 export const Outlined = Template.bind({});
 Outlined.args = {
   text: 'Outlined Button',
-  type: ButtonType.SOLID,
+  type: ButtonType.OUTLINED,
   onClick: () => {
     alert('You clicked the outlined button');
   },
