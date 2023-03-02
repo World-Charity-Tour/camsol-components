@@ -36,6 +36,14 @@ v8.16.0
 
 ## Installation
 
+```bash
+npm install camsol-components-library
+
+OR
+
+npm i camsol-components-library
+```
+
 ## Example Usage
 
 ### Button Component
