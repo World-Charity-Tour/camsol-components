@@ -9,6 +9,15 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/World-Charity-Tour/camsol-components.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/World-Charity-Tour/camsol-components/issues"
+  },
+  "homepage": "https://github.com/World-Charity-Tour/camsol-components#readme",
   "author": "Camsol Technologies Ltd.",
   "keywords": [
     "Reusable Components,",
