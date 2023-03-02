@@ -1,4 +1,4 @@
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Eslint]((https://img.shields.io/static/v1?label=linting&message=eslint&color=blue))](https://img.shields.io/static/v1?label=linting&message=eslint&color=blue)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 # Camsol Components Library
 
