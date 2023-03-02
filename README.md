@@ -38,6 +38,16 @@ v8.16.0
 
 ## Example Usage
 
+```tsx
+import { Button } from "camsol-components-library";
+
+const App: React.FC = () => {
+  return (
+    <Button type='Solid' text="Button Text" />
+  )
+}
+```
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
