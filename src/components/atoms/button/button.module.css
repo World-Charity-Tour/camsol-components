@@ -14,6 +14,7 @@
   display: -ms-flexbox;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   gap: 1.2rem;
 }
 
