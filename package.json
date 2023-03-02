@@ -1,7 +1,7 @@
 {
   "name": "camsol-components-library",
   "description": "This is a components library built for having a single source of components for the Camsol website project.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -118,7 +118,7 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.75.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
