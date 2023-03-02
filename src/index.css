@@ -1,11 +1,214 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+/** COLOR PALETTES | GLOBAL VARIABLES ******************************************/
+:root {
+  --white-color: #fff;
+  --camsol-primary-900: #00151e;
+  --camsol-primary-800: #001b27;
+  --camsol-primary-700: #002231;
+  --camsol-primary-600: #002e42;
+  --camsol-primary-500: #003952;
+  --camsol-primary-400: #336175;
+  --camsol-primary-300: #678998;
+  --camsol-primary-200: #a3b8c1;
+  --camsol-primary-100: #d7e0e4;
+  --camsol-primary-50: #ebeff1;
+
+  --camsol-primary-gradient-900: linear-gradient(
+    to top,
+    var(--camsol-primary-900),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-800: linear-gradient(
+    to top,
+    var(--camsol-primary-800),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-700: linear-gradient(
+    to top,
+    var(--camsol-primary-700),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-600: linear-gradient(
+    to top,
+    var(--camsol-primary-600),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-500: linear-gradient(
+    to top,
+    var(--camsol-primary-500),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-400: linear-gradient(
+    to top,
+    var(--camsol-primary-400),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-300: linear-gradient(
+    to top,
+    var(--camsol-primary-300),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-200: linear-gradient(
+    to top,
+    var(--camsol-primary-200),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-100: linear-gradient(
+    to top,
+    var(--camsol-primary-100),
+    var(var(--camsol-primary-900))
+  );
+  --camsol-primary-gradient-50: linear-gradient(
+    to top,
+    var(--camsol-primary-50),
+    var(var(--camsol-primary-900))
+  );
+
+  --technology-secondary-900: #203656;
+  --technology-secondary-800: #2b4771;
+  --technology-secondary-700: #35598d;
+  --technology-secondary-600: #4777be;
+  --technology-secondary-500: #5995ed;
+  --technology-secondary-400: #7aaaf1;
+  --technology-secondary-300: #9cc0f4;
+  --technology-secondary-200: #c3d9f9;
+  --technology-secondary-100: #e5eefc;
+  --technology-secondary-50: #f2f7fe;
+
+  --platform-secondary-900: #2c203a;
+  --platform-secondary-800: #3b2a4d;
+  --platform-secondary-700: #5c187a;
+  --platform-secondary-600: #624681;
+  --platform-secondary-500: #7b58a1;
+  --platform-secondary-400: #9579b4;
+  --platform-secondary-300: #b09bc7;
+  --platform-secondary-200: #cfc3dd;
+  --platform-secondary-100: #eae5f0;
+  --platform-secondary-50: #eae5f0;
+
+  --innovation-secondary-900: #01322f;
+  --innovation-secondary-800: #02423e;
+  --innovation-secondary-700: #02524d;
+  --innovation-secondary-600: #036e67;
+  --innovation-secondary-500: #048a81;
+  --innovation-secondary-400: #36a19a;
+  --innovation-secondary-300: #69b9b4;
+  --innovation-secondary-200: #a4d5d2;
+  --innovation-secondary-100: #d8edeb;
+  --innovation-secondary-50: #ebf6f5;
+
+  --foundation-secondary-900: #5b310c;
+  --foundation-secondary-800: #794110;
+  --foundation-secondary-700: #975014;
+  --foundation-secondary-600: #ca6c1a;
+  --foundation-secondary-500: #fd8721;
+  --foundation-secondary-400: #fd9f4d;
+  --foundation-secondary-300: #feb77b;
+  --foundation-secondary-200: #fed4af;
+  --foundation-secondary-100: #ffecdc;
+  --foundation-secondary-50: #fff6ee;
+
+  --camsol-neutral-900: #000e14;
+  --camsol-neutral-800: #222222;
+  --camsol-neutral-700: #4c4c4c;
+  --camsol-neutral-600: #666666;
+  --camsol-neutral-500: #7a777d;
+  --camsol-neutral-400: #999999;
+  --camsol-neutral-300: #b3b3b3;
+  --camsol-neutral-200: #d1d1d1;
+  --camsol-neutral-100: #f4f4f4;
+  --camsol-neutral-50: #ebf6f5;
+
+  --camsol-black: #000000;
+  --camsol-white: #ffffff;
+
+  --camsol-status-success: #49b646;
+  --camsol-status-error: #ff4e4e;
+
+  --px: 6vw;
+  --py: 3rem;
+
+  --inter-font: 'Inter', sans-serif;
+
+  /** SHADOWS */
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img,
+picture {
+  width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
