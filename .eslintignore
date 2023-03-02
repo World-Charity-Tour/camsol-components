@@ -9,3 +9,4 @@ build
 react-app-env.d.ts
 setupTests.ts
 commitlint.config.js
+rollup.config.js
