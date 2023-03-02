@@ -38,12 +38,14 @@ v8.16.0
 
 ## Example Usage
 
+### Button Component
+
 ```tsx
 import { Button } from "camsol-components-library";
 
 const App: React.FC = () => {
   return (
-    <Button type='Solid' text="Button Text" />
+    <Button type="Solid" text="Button Text" />
   )
 }
 ```
