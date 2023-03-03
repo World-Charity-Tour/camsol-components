@@ -86,3 +86,25 @@ Customizable.args = {
   customizeVariantProps: true,
   index: 0,
 };
+
+export const CustomizableDirectional = Template.bind({});
+CustomizableDirectional.args = {
+  text: 'Customizable Button With Icons',
+  type: ButtonType.SOLID,
+  iconLeft: (
+    <>
+      <MailIcon fill='#fff' />
+    </>
+  ),
+  iconRight: (
+    <>
+      <MailIcon fill='#fff' />
+    </>
+  ),
+  bgColor: '#000',
+  hoverBgColor: 'orange',
+  hoverColor: '#fff',
+  color: '#fff',
+  customizeVariantProps: true,
+  index: 0,
+};
