@@ -102,7 +102,7 @@ CustomizableDirectional.args = {
     </>
   ),
   bgColor: '#000',
-  hoverBgColor: 'orange',
+  hoverBgColor: 'blue',
   hoverColor: '#fff',
   color: '#fff',
   customizeVariantProps: true,
