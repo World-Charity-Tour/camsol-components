@@ -92,4 +92,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 [GNU GPLv3](https://github.com/World-Charity-Tour/camsol-components/blob/main/LICENSE.md)
 
-Camsol Technologies Ltd.
+Camsol Innovations GmbH
