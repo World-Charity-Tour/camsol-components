@@ -19,6 +19,6 @@ jobs:
     needs: [build]
     steps:
       - name: Deploy storybook to GitHub Pages
-        run: npm run deploy-storybook -- --ci
+        run: npm run deploy-storybook -- --ci --source-branch=main
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
