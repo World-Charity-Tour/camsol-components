@@ -38,7 +38,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s docs",
-    "build-storybook": "build-storybook -s docs"
+    "build-storybook": "build-storybook -s docs",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": [
@@ -83,6 +84,7 @@
     "@storybook/node-logger": "^6.5.16",
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.16",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/theming": "^6.5.16",
     "@testing-library/jest-dom": "^5.16.5",
@@ -91,6 +93,7 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.14",
     "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "babel-plugin-named-exports-order": "^0.0.2",
@@ -109,6 +112,8 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "rollup": "^3.18.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -116,10 +121,7 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.75.0",
-    "@types/react-dom": "^18.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "webpack": "^5.75.0"
   },
   "peerDependencies": {
     "@types/react-dom": "^18.0.11",
