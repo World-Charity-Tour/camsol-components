@@ -1,5 +1,5 @@
 {
-  "name": "camsol-components-library",
+  "name": "@camsol.io/components",
   "description": "This is a components library built for having a single source of components for the Camsol website project.",
   "version": "1.0.2",
   "private": false,
