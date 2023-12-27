@@ -1,0 +1,138 @@
+.button_btn__L893v {
+  padding: 1.6rem 2.4rem;
+  height: 51px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 1.2rem;
+}
+
+.button_badge__uQFT3 {
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 2.2rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  height: 35px;
+  color: #4777be;
+  border: none;
+  border-radius: 4px;
+}
+
+.button_badge__uQFT3.button_rounded__w3nGM {
+  border-radius: 18px;
+}
+
+.button_btn__L893v:disabled {
+  cursor: not-allowed;
+}
+
+/* SOLID BUTTON STYLES ****************************/
+.button_btn__L893v.button_solid__R8nOd {
+  background: #4777be;
+  color: #fff;
+}
+
+.button_btn__L893v.button_solid__R8nOd:hover {
+  background: #5995ed;
+}
+
+.button_btn__L893v.button_solid__R8nOd:focus-within {
+  background: #203656;
+}
+
+.button_btn__L893v.button_solid__R8nOd:disabled {
+  background: #e2e2e2;
+  color: #a9a9a9;
+}
+
+/* OUTLINED BUTTON STYLES ****************************/
+.button_btn__L893v.button_outlined__T2riq {
+  background: transparent;
+  border: 2px solid #4777be;
+  color: #4777be;
+}
+
+.button_btn__L893v.button_outlined__T2riq:hover {
+  background: #f2f7fe;
+}
+
+.button_btn__L893v.button_outlined__T2riq:focus-within {
+  background: #c3d9f9;
+}
+
+.button_btn__L893v.button_outlined__T2riq:disabled {
+  background: #ffffff;
+  color: #a9a9a9;
+  border: 2px solid #e2e2e2;
+}
+
+/* TEXT BUTTON STYLES ****************************/
+.button_btn__L893v.button_text__SMhbx {
+  background: transparent;
+  color: #4777be;
+}
+
+.button_btn__L893v.button_text__SMhbx:hover {
+  background: #f2f7fe;
+}
+
+.button_btn__L893v.button_text__SMhbx:focus-within {
+  background: #c3d9f9;
+}
+
+.button_btn__L893v.button_text__SMhbx:disabled {
+  background: #ffffff;
+  color: #a9a9a9;
+}
+
+/* UNDERLINED BUTTON STYLES ****************************/
+.button_btn__L893v.button_underlined__jY8BW {
+  background: transparent;
+  color: #4777be;
+  position: relative;
+}
+
+.button_btn__L893v.button_underlined__jY8BW::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  width: calc(100% - 3rem);
+  border: 1.5px solid #4777be;
+  bottom: 1rem;
+}
+
+.button_btn__L893v.button_underlined__jY8BW:hover {
+  background: #f2f7fe;
+}
+
+.button_btn__L893v.button_underlined__jY8BW:focus-within {
+  background: #7aaaf1;
+  color: #2b4771;
+}
+
+.button_btn__L893v.button_underlined__jY8BW:disabled {
+  background: #ffffff;
+  color: #a9a9a9;
+}
+
+.button_btn__L893v.button_underlined__jY8BW:disabled:before {
+  border: 1.5px solid #a9a9a9;
+}
+
+
+/*# sourceMappingURL=main.df07e973.css.map*/
