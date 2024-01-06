@@ -1,0 +1,23 @@
+.link {
+  list-style-type: none;
+  font-size: 18px;
+  color: #383838;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress {
+  width: 40%;
+  height: 2px;
+  visibility: hidden;
+  background: #9b28cc;
+  border-radius: 8px;
+  margin-top: 2px;
+  align-self: flex-end;
+  display: inline-block;
+}
+
+.link:hover > span.progress {
+  visibility: visible;
+}
